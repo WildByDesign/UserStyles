@@ -1,34 +1,34 @@
 /* ==UserStyle==
 @name           Rectify11 Chrome-Edge Fixes
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.3
 @description    Fixes issues caused by Chromium-based browser system colors bug
 @author         WildByDesign
 @updateURL      https://raw.githubusercontent.com/WildByDesign/UserStyles/main/Rectify11.user.styl
 ==/UserStyle== */
 
-/* Add domains that are affected by this bug to the @-moz-document section */
 
-@-moz-document domain("msi.com"), domain("bestbuy.ca"), domain("amazon.ca") {
+    /* This is a Global UserStyle that is applied to all web sites. */
+    /* Changes are only applied to sites that do not explicitly specify colors. */
+    /* Those are the sites triggering this bug. */
+
 
 	/* General fix for selection drop-down menus */
 	
 	select {
-	  background-color: white !important;
+	  background-color: white;
 	  color: black;
 	}
 	
 	/* General fix for text/input boxes */
 	
 	input {
-	  background-color: white !important;
+	  background-color: white;
 	  color: black;
 	}
 	
-	/* Specific fix for driver download tab buttons on msi.com */
+	/* General fix for buttons showing white text instead */
 	
-	.subTab {
-	  background-color: white !important;
+	button {
 	  color: black;
-	}
 	}
