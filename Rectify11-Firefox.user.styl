@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Rectify11 Firefox Fixes
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Fixes issues caused by Firefox browser system colors bug
 @author         WildByDesign
 @updateURL      https://raw.githubusercontent.com/WildByDesign/UserStyles/main/Rectify11-Firefox.user.styl
@@ -13,15 +13,10 @@
     /* Those are the sites triggering this bug. */
 
 
-	/* General fix for selection drop-down menus */
-    /* Changed background-color to transparent to fix Firefox */
+    /* General fix for selection drop-down menus */
+    /* Changed background-color to transparent to fix drop-downs in Firefox */
 	
-	select {
-	  background-color: transparent !important;
-	  color: black;
-	}
-	
-    body {
-      background-color: white;
+    select {
+      background-color: transparent !important;
       color: black;
-}
+    }
