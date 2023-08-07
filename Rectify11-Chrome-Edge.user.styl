@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name           Rectify11 Chrome-Edge Fixes
+@namespace      github.com/openstyles/stylus
+@version        1.1.0
+@description    Fixes issues caused by Chromium-based browser system colors bug when using Rectify11
+@author         WildByDesign
+@updateURL      https://raw.githubusercontent.com/WildByDesign/UserStyles/main/Rectify11-Chrome-Edge.user.styl
+==/UserStyle== */
+
+
+    /* This is a Global UserStyle that is applied to all web sites. */
+    /* Changes are only applied to sites that do not explicitly specify colors. */
+    /* Those are the sites triggering this bug. */
+
+
+    /* General fix for selection drop-down menus */
+
+	select {
+	  background-color: white;
+	  color: black;
+	}
+
+    /* General fix for text/input boxes */
+
+	input {
+	  background-color: white;
+	  color: black;
+	}
+
+    /* General fix for buttons showing white text instead */
+
+	button {
+	  color: black;
+	}
